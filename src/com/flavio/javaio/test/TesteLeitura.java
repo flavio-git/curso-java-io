@@ -6,8 +6,8 @@ import java.util.stream.Stream;
 public class TesteLeitura {
 
     public static void main(String[] args) throws IOException {
-        FileInputStream source = new FileInputStream("lorem.txt");
-        InputStreamReader reader = new InputStreamReader(source);
+        InputStream source = new FileInputStream("lorem.txt");
+        Reader reader = new InputStreamReader(source);
         BufferedReader file = new BufferedReader(reader);
 
         /*
