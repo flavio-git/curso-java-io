@@ -1,6 +1,5 @@
 package com.flavio.javaio.test;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
@@ -11,8 +10,8 @@ public class TesteEscrita4 {
         // Escrevendo arquivos com as classes PrintStream e PrintWriter
         // Antes do Java ter as classes FileWriter era utilizada a classe PrintStream
 
-        PrintStream file = new PrintStream("teste-escrita4.txt");
-        PrintWriter file2 = new PrintWriter("teste-escrita5.txt");
+        PrintStream file = new PrintStream("public/teste-escrita4.txt");
+        PrintWriter file2 = new PrintWriter("public/teste-escrita5.txt");
 
         file.println("This a test with PrintStream class.");
         file.print("Class 3.2.");

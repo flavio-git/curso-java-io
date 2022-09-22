@@ -7,7 +7,7 @@ public class TesteEscrita2 {
 
         // Escrevendo arquivos com a classe FileWriter
 
-        FileWriter file = new FileWriter("teste-escrita2.txt");
+        FileWriter file = new FileWriter("public/teste-escrita2.txt");
 
         file.write("This is a test.");
         file.write(System.lineSeparator()); // o mesmo resultado de '\n' só que ele ver qual o sistema operacional

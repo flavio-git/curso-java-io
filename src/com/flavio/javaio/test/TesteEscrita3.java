@@ -9,7 +9,7 @@ public class TesteEscrita3 {
 
         // Escrevendo arquivos com a classe BufferedWriter e FileWriter
 
-        BufferedWriter file = new BufferedWriter(new  FileWriter("teste-escrita3.txt"));
+        BufferedWriter file = new BufferedWriter(new  FileWriter("public/teste-escrita3.txt"));
 
         file.write("This is a test with BufferedWriter and FileWriter.");
         file.newLine();

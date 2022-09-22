@@ -6,7 +6,7 @@ import java.io.*;
 public class TesteEscrita {
     public static void main(String[] args) throws IOException {
 
-        OutputStream source = new FileOutputStream("teste-escrita.txt");
+        OutputStream source = new FileOutputStream("public/teste-escrita.txt");
         Writer writer = new OutputStreamWriter(source);
         BufferedWriter file = new BufferedWriter(writer);
 
