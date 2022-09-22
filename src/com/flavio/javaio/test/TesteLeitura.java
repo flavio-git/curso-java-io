@@ -15,10 +15,16 @@ public class TesteLeitura {
         lines.forEach(System.out::println); // imprimi todas as linhas do arquivo no console
         */
 
-        String line = file.readLine(); // guarda a primeira linha do arquivo
+        String line = file.readLine();
 
-        System.out.println(line);
+        while (line != null){
+            System.out.println(line);
+            line = file.readLine();
+        }
+
+        file.close(); // fecha o arquivo
 
     }
+
 
 }
