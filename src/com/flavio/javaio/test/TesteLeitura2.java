@@ -28,7 +28,14 @@ public class TesteLeitura2 {
             String value4 = lineScanner.next();
             double value5 = lineScanner.nextDouble();
 
-            System.out.printf("%s %s %s %s %s \n", value1, value2, value3, value4, value5);
+            String formatedLine = String.format(
+                    new Locale("pt", "BR"),
+                    "%s - %04d - %04d - %20s - %08.2f",
+                    value1, value2, value3, value4, value5);
+
+            System.out.println(formatedLine);
+
+            //System.out.printf("%s %s %s %s %s \n", value1, value2, value3, value4, value5);
 
         }
 
